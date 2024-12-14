@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: "Montserrat", serif;
+    background-color: #f4f6f9;
+}
+.onboarding-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-top: 30px;
+}
+.navbar {
+    padding-right: 5rem;
+    padding-top: .8rem;
+    font-family: "Montserrat", serif;
+    background-color: #002B67;
+}
+.navbar-brand {
+    font-size: 1rem;
+    color: #e9ecef;
+    font-weight:500;
+    padding-left:90px;
+} 
+.nav-item{
+    padding-right: 30px;
+    color: #e9ecef;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff7300;
+}
+.container{
+    font-family: "Montserrat", serif;
+    padding-top: 30px;
+
+}
+
+.C-1{
+    width: 70%;
+    
+
+}   
+a{
+    text-decoration: ;
+    color:#002B67;
+}
+a:hover{
+    text-decoration: underline;
+    color:#002B67;
+    font-weight:300;
+}
+h2{
+    font-weight: 600;
+    font-size: 2.5rem;
+    color:#355834 ;
+    font: bold;
+    font-family: "Montserrat", serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #333;
+    width: 30ch; /* Adjust to the length of the text */
+    animation: typing 4s steps(30) 1s forwards, blink 0.5s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 30ch; /* Adjust to match the text length */
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+
+
+       
+       
+        
+        
+        
+        

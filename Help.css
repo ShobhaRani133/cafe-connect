@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Montserrat", serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styling */
+.help-header {
+    background-color: #002B67;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.help-header h1 {
+    margin: 0;
+    font-size: 1.3rem;
+    
+}
+
+.help-header p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+.help-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.help-section {
+    margin-bottom: 30px;
+}
+
+.help-section h2 {
+    color: #355834;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.help-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.help-section ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: 500;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+.help-footer {
+    background-color: #333;
+    color: #f4ee07;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+button{
+    background-color:#002B67;
+}

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Role - DevOps Onboarding</title>
+    <!-- Bootstrap CSS -->
+    <link href="Onbording.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002B67;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="CBLOGO.png" alt="Logo" style="width: 150px; height: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Culture.html">CB Culture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+         
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h2 class="text-center">Choose Your Role</h2>
+        
+            <div class="dropdown text-center">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Option
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Developer</a></li>
+                    <li><a class="dropdown-item" href="#" id="devopsOption">DevOps Engineer</a></li>
+                    <li><a class="dropdown-item" href="#">Data Science</a></li>
+                    <li><a class="dropdown-item" href="#">Data Engineer</a></li>
+                    <li><a class="dropdown-item" href="#">Business Analyst</a></li>
+                    <li><a class="dropdown-item" href="#">HR Operations</a></li>
+                    <li><a class="dropdown-item" href="#">QA</a></li>
+                </ul>
+            </div>
+            
+
+        
+       
+
+        <!-- DevOps Content Section -->
+        <div id="devopsContent" class="onboarding-container" style="display: none;">
+            <h2 class="text-center mt-4">Welcome to DevOps Onboarding</h2>
+            <div class="list-group">
+                <a href="#missionModal" class="modal-trigger list-group-item list-group-item-action" data-modal="missionModal">
+                    <h5>Our Mission</h5>
+                    <p class="text-muted">Understand our core objectives and vision</p>
+                </a>
+                <a href="#infrastructureModal" class="modal-trigger list-group-item list-group-item-action" data-modal="infrastructureModal">
+                    <h5>Infrastructure Overview</h5>
+                    <p class="text-muted">Deep dive into our technological landscape</p>
+                </a>
+                <a href="#infrastructureComponent" class="modal-trigger list-group-item list-group-item-action" data-modal="infrastructureComponent">
+                    <h5>Infrastructure Components</h5>
+                    <p class="text-muted">Deep dive into our technological landscape</p>
+                </a>
+                <a href="#configModal" class="modal-trigger list-group-item list-group-item-action" data-modal="configModal">
+                    <h5>Configuration Management</h5>
+                    <p class="text-muted">Strategies for system configuration</p>
+                </a>
+                <a href="#migrationModal" class="modal-trigger list-group-item list-group-item-action" data-modal="migrationModal">
+                    <h5>Migration of Data and Resource</h5>
+                    <p class="text-muted">Learn about seamless data and resource migration</p>
+                </a>
+                <a href="#orchestrationModal" class="modal-trigger list-group-item list-group-item-action" data-modal="orchestrationModal">
+                    <h5>Orchestration and Automation</h5>
+                    <p class="text-muted">Automate and orchestrate workflows effectively</p>
+                </a>
+                <a href="#scalingModal" class="modal-trigger list-group-item list-group-item-action" data-modal="scalingModal">
+                    <h5>Capacity Management and Auto-Scaling</h5>
+                    <p class="text-muted">Optimize capacity and enable auto-scaling</p>
+                </a>
+                <a href="#Communication" class="modal-trigger list-group-item list-group-item-action" data-modal="Communication">
+                    <h5> Communication and Notifications</h5>
+                    <p class="text-muted">Optimize capacity and enable auto-scaling</p>
+                </a>
+                <a href="#versionControlModal" class="modal-trigger list-group-item list-group-item-action" data-modal="versionControlModal">
+                    <h5>Version Control Management</h5>
+                    <p class="text-muted">Master version control for collaborative coding</p>
+                </a>
+                <a href="#appendix" class="modal-trigger list-group-item list-group-item-action"  data-modal="appendix">
+                    <h5>Appendix</h5>
+                    <p class="text-muted">Additional resources and references</p>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Modals -->
+    <div id="missionModal" class="custom-modal">
+        <div class="custom-modal-content">
+            <div class="custom-modal-header">
+                <h2>Our Mission</h2>
+                <span class="custom-modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>At CoffeeBeans, our mission is to empower businesses by solving complex challenges and streamlining operations through innovation and technology.</p>
+                <p>Our DevOps infrastructure plays a crucial role in this mission, enabling us to create, optimize, and scale solutions that address our clients’ unique needs efficiently and effectively.</p>
+                <h3>Purpose-Driven DevOps at CoffeeBeans</h3>
+                <p>Our infrastructure serves as the foundation for agile, resilient, and scalable solutions. Guided by three core pillars, our approach ensures that we maximize impact at every stage:</p>
+                <ol>
+                    <li>
+                        <strong>Discover:</strong> Our first step is to fully understand our clients' goals, challenges, and objectives. We dive deep to uncover valuable insights, which inform the creation of tailored DevOps solutions. From identifying bottlenecks to forecasting needs, we’re committed to building value into every aspect of our projects.
+                    </li>
+                    <li>
+                        <strong>Optimize:</strong> Complexity doesn’t deter us; it motivates us. Our infrastructure is designed to simplify and streamline processes, enhancing performance and security while maintaining adaptability. This agile approach allows us to iterate quickly, delivering optimized solutions that support our clients' evolving requirements.
+                    </li>
+                    <li>
+                        <strong>Scale:</strong> We ensure our clients are set up for sustainable growth by building scalable solutions that evolve with their business. Our infrastructure supports seamless expansion, enabling clients to achieve high availability, reliability, and efficiency as they grow.
+                    </li>
+                </ol>
+                <h3>A DevOps Ecosystem Built for Results</h3>
+                <p>Our DevOps infrastructure brings together best-in-class tools, practices, and methodologies to deliver rapid, reliable, and secure solutions. From CI/CD pipelines and automated testing to monitoring and feedback loops, every component is designed to enhance speed and accuracy while reducing risks. At CoffeeBeans, we’re dedicated to fostering a culture of continuous improvement, ensuring our clients always stay ahead of the curve.</p>
+                <p>Welcome to CoffeeBeans, where DevOps innovation meets business transformation. Together, let’s build solutions that don’t just meet today’s needs but anticipate tomorrow’s opportunities.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="infrastructureModal" class="custom-modal">
+        <div class="custom-modal-content">
+            <div class="custom-modal-header">
+                <h2>Infrastructure Overview</h2>
+                <span class="custom-modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h3>QA Environment</h3>
+                <ul>
+                    <li>VPC with dedicated subnets for isolation and security.</li>
+                    <li>RDS for database needs, ensuring consistency with production schemas.</li>
+                    <li>EKS configured with zero-scale auto-scaling for cost efficiency during low usage periods.</li>
+                    <li>S3 buckets for application data storage, test data, and backups.</li>
+                </ul>
+                <h3>Production Environment</h3>
+                <ul>
+                    <li>Robust security configurations for all resources.</li>
+                    <li>Continuous monitoring and scaling capabilities.</li>
+                </ul>
+                <h3>Development Environment</h3>
+                <ul>
+                    <li>Similar to QA, the Development environment replicates the same configurations to ensure consistency across all deployment environments.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="infrastructureComponent" class="custom-modal">
+        <div class="custom-modal-content">
+            <div class="custom-modal-header">
+                <h2>Infrastructure Components</h2>
+                <span class="custom-modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>The CoffeeBeans infrastructure consists of several foundational components that ensure reliability, scalability, and efficiency across environments. Below is an overview of these components:</p>
+    
+                <h3>Core Infrastructure</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Component</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>VPC (Virtual Private Cloud)</td>
+                            <td>Provides isolated network environments for applications and services, ensuring security and control over traffic flow.</td>
+                        </tr>
+                        <tr>
+                            <td>Subnets</td>
+                            <td>Segregated sub-networks for separating application tiers and improving access control.</td>
+                        </tr>
+                        <tr>
+                            <td>RDS (Relational Database Service)</td>
+                            <td>Highly available and scalable database management for development, QA, and production environments.</td>
+                        </tr>
+                        <tr>
+                            <td>S3 (Simple Storage Service)</td>
+                            <td>Used for storing application data, backups, and static assets with high durability.</td>
+                        </tr>
+                        <tr>
+                            <td>EKS (Elastic Kubernetes Service)</td>
+                            <td>Manages containerized applications for efficient orchestration and scaling using Kubernetes.</td>
+                        </tr>
+                        <tr>
+                            <td>EC2 (Elastic Compute Cloud)</td>
+                            <td>Virtual servers for hosting critical workloads and managing development/production environments.</td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <h3>Supporting Services</h3>
+                <ul>
+                    <li><strong>Elastic Container Registry (ECR):</strong> Stores Docker container images with proper versioning for various environments.</li>
+                    <li><strong>IAM (Identity and Access Management):</strong> Ensures secure access policies for users and services.</li>
+                    <li><strong>CloudWatch:</strong> Provides monitoring and logging capabilities for infrastructure and applications.</li>
+                    <li><strong>Route 53:</strong> DNS service for managing domain routing to application endpoints.</li>
+                </ul>
+    
+                <h3>Deployment Pipelines</h3>
+                <p>The infrastructure is integrated with CI/CD pipelines that automate deployments across environments. These pipelines include:</p>
+                <ul>
+                    <li><strong>CodeBuild:</strong> Builds application artifacts from source code.</li>
+                    <li><strong>CodePipeline:</strong> Orchestrates the build, test, and deployment stages.</li>
+                    <li><strong>CodeDeploy:</strong> Deploys updates to EC2 or EKS environments with minimal downtime.</li>
+                </ul>
+    
+                <h3>Environment Breakdown</h3>
+                <h4>QA Environment</h4>
+                <ul>
+                    <li>VPC with dedicated subnets for isolation and security.</li>
+                    <li>RDS configured for consistency with production schemas.</li>
+                    <li>EKS with auto-scaling for efficient resource usage.</li>
+                    <li>S3 buckets for test data and backups.</li>
+                </ul>
+    
+                <h4>Production Environment</h4>
+                <ul>
+                    <li>Mirrors QA configurations with enhanced security policies.</li>
+                    <li>Continuous monitoring and scaling for high availability.</li>
+                    <li>Strict access controls through IAM policies.</li>
+                </ul>
+    
+                <h4>Development Environment</h4>
+                <ul>
+                    <li>Similar to QA setup for seamless transition between environments.</li>
+                    <li>Frequent updates to test new features and workflows.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="configModal" class="custom-modal">
+        <div class="custom-modal-content">
+            <div class="custom-modal-header">
+                <h2>Configuration Management</h2>
+                <span class="custom-modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Learn about best practices and tools for managing system configurations.</p>
+                <p>
+                    <strong>Configuration Management</strong><br>
+                    <strong>HashiCorp Vault</strong><br>
+                    <strong>Purpose:</strong> Securely manages application secrets, configurations, and environment variables.<br>
+                    <strong>Scope:</strong> Ensures that all environments can access secrets securely and that updates are consistent.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="migrationModal" class="custom-modal">
+        <div class="custom-modal-content">
+            <div class="custom-modal-header">
+                <h2>Migration of Data and Resource</h2>
+                <span class="custom-modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Learn about seamless data and resource migration processes and best practices.</p>
+                <h3>Resource Migration Details</h3>
+                <p>Recently, we moved from Google Cloud Platform (GCP) to Amazon Web Services (AWS). The migration involved transferring resources and workloads from GCP to AWS using automated scripts, Pulumi for Infrastructure as Code (IaC), and various migration techniques. Below are the details of the migration, categorized by resource type:</p>
+    
+                <h4>1. Buckets</h4>
+                <p><strong>GCP:</strong> Google Cloud Storage (Buckets)<br>
+                   <strong>AWS:</strong> Amazon Simple Storage Service (S3)<br>
+                   <strong>Migration Method:</strong> <em>bucket_backup_restore.py</em> - This script backs up data from GCP buckets and restores it to S3 buckets in AWS, ensuring all data, including metadata, is accurately migrated.<br>
+                   <strong>Outcome:</strong> S3 buckets now host all the data originally stored in GCP buckets.</p>
+    
+                <h4>2. Databases</h4>
+                <p><strong>GCP:</strong> Google Cloud SQL (Databases)<br>
+                   <strong>AWS:</strong> Amazon Relational Database Service (RDS)<br>
+                   <strong>Migration Method:</strong> <em>database_backup.py</em> - Creates a backup of GCP databases, and <em>database_restore.py</em> restores the backup into AWS RDS. This approach ensures data integrity.<br>
+                   <strong>Outcome:</strong> RDS instances are operational, hosting all data previously in GCP SQL.</p>
+    
+                <h4>3. Persistent Volumes</h4>
+                <p><strong>GCP:</strong> GKE Persistent Volumes (GKE PVCs)<br>
+                   <strong>AWS:</strong> EKS Persistent Volumes (EKS PVCs)<br>
+                   <strong>Migration Method:</strong> <em>migratepvc.sh</em> - This script handles the migration of Persistent Volume Claims (PVCs) from GKE to EKS, ensuring smooth transfer of stateful data.<br>
+                   <strong>Outcome:</strong> Stateful workloads are successfully utilizing EKS PVCs.</p>
+    
+                <h4>4. Virtual Machines</h4>
+                <p><strong>GCP:</strong> Compute Engine VMs<br>
+                   <strong>AWS:</strong> EC2 Instances<br>
+                   <strong>Migration Method:</strong> Pulumi - EC2 instances and their configurations are created as part of IaC. Additional data and disks are manually copied to the new EC2 instances as needed.<br>
+                   <strong>Outcome:</strong> EC2 instances are fully functional with data and configurations migrated from GCP VMs.</p>
+    
+                <h4>5. Artifact Repository</h4>
+                <p><strong>GCP:</strong> Artifact Registry<br>
+                   <strong>AWS:</strong> Elastic Container Registry (ECR)<br>
+                   <strong>Migration Method:</strong> Pulumi - Creates ECR repositories. Container images are copied to the new ECR repositories after creation.<br>
+                   <strong>Outcome:</strong> ECR hosts all container images, maintaining consistency with the artifact repository in GCP.</p>
+    
+                <h4>6. Serverless Applications</h4>
+                <p><strong>GCP:</strong> Cloud Run<br>
+                   <strong>AWS:</strong> Elastic Kubernetes Service (EKS)<br>
+                   <strong>Migration Method:</strong> Helm Charts - Used to deploy applications on EKS.<br>
+                   <strong>Outcome:</strong> Applications previously hosted on Cloud Run are now deployed and running on EKS.</p>
+    
+                <h4>7. Disks</h4>
+                <p><strong>GCP:</strong> Persistent Disks<br>
+                   <strong>AWS:</strong> Elastic Block Store (EBS)<br>
+                   <strong>Migration Method:</strong> Direct commands are used to copy data from GCP disks to EBS volumes in AWS.<br>
+                   <strong>Outcome:</strong> All required disk data is now hosted on EBS volumes.</p>
+    
+                <h4>8. Networking</h4>
+                <p><strong>GCP:</strong> VPC (Virtual Private Cloud)<br>
+                   <strong>AWS:</strong> VPC<br>
+                   <strong>Migration Method:</strong> Pulumi - VPCs are recreated in AWS with equivalent configurations.<br>
+                   <strong>Outcome:</strong> Networking infrastructure has been replicated on AWS.</p>
+    
+                <h3>Migration Overview</h3>
+                <p>The migration process leveraged the following tools and technologies:</p>
+                <ul>
+                    <li><strong>Pulumi:</strong> For automating infrastructure creation, including VPCs, EC2 instances, and ECR repositories.</li>
+                    <li><strong>Custom Scripts:</strong>
+                        <ul>
+                            <li><em>bucket_backup_restore.py</em>: For bucket migrations.</li>
+                            <li><em>database_backup.py</em> and <em>database_restore.py</em>: For database migrations.</li>
+                            <li><em>migratepvc.sh</em>: For PVC migrations.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Helm Charts:</strong> For deploying applications on EKS.</li>
+                </ul>
+                <p>This combination of automation, scripting, and manual processes ensured data consistency, minimized downtime, and streamlined the migration effort.</p>
+    
+                <h3>Post-Migration Benefits</h3>
+                <ul>
+                    <li>Consolidation of resources into AWS for unified cloud management.</li>
+                    <li>Leveraging AWS’s ecosystem for better scalability and cost optimization.</li>
+                    <li>Improved resilience and availability with AWS's robust infrastructure services.</li>
+                </ul>
+    
+                <h3>Migration Scripts and Methods</h3>
+                <table border="1">
+                    <tr>
+                        <th>AWS Service</th>
+                        <th>Migration Method</th>
+                    </tr>
+                    <tr>
+                        <td>S3</td>
+                        <td><em>bucket_backup_restore.py</em></td>
+                    </tr>
+                    <tr>
+                        <td>RDS</td>
+                        <td><em>database_backup.py</em>, <em>database_restore.py</em></td>
+                    </tr>
+                    <tr>
+                        <td>EKS PVC</td>
+                        <td><em>migratepvc.sh</em></td>
+                    </tr>
+                    <tr>
+                        <td>EC2</td>
+                        <td>Pulumi, with data copied manually</td>
+                    </tr>
+                    <tr>
+                        <td>ECR</td>
+                        <td>Pulumi-managed, images copied post-creation</td>
+                    </tr>
+                    <tr>
+                        <td>EKS Applications</td>
+                        <td>Deployed via Helm charts</td>
+                    </tr>
+                    <tr>
+                        <td>EBS</td>
+                        <td>Data migration handled via specific commands</td>
+                    </tr>
+                    <tr>
+                        <td>VPC</td>
+                        <td>Managed via Pulumi</td>
+                    </tr>
+                </table>
+    
+                <h3>GCP to AWS Mappings</h3>
+                <p>As we migrate data from GCP, here’s the mapping of GCP components to AWS services and methods:</p>
+                <table border="1">
+                    <tr>
+                        <th>GCP Component</th>
+                        <th>AWS Component</th>
+                        <th>Migration Method</th>
+                    </tr>
+                    <tr>
+                        <td>Buckets</td>
+                        <td>S3</td>
+                        <td><em>bucket_backup_restore.py</em></td>
+                    </tr>
+                    <tr>
+                        <td>Databases</td>
+                        <td>RDS</td>
+                        <td><em>database_backup.py</em>, <em>database_restore.py</em></td>
+                    </tr>
+                    <tr>
+                        <td>GKE PVCs</td>
+                        <td>EKS PVCs</td>
+                        <td><em>migratepvc.sh</em></td>
+                    </tr>
+                    <tr>
+                        <td>VMs</td>
+                        <td>EC2</td>
+                        <td>Pulumi, with data copied manually</td>
+                    </tr>
+                    <tr>
+                        <td>Artifact Registry</td>
+                        <td>ECR</td>
+                        <td>Pulumi-managed, images copied post-creation</td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Run</td>
+                        <td>EKS</td>
+                        <td>Helm charts</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="orchestrationModal" class="custom-modal">
+        <div class="custom-modal-content">
+            <div class="custom-modal-header">
+                <h2>Orchestration and Automation</h2>
+                <span class="custom-modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Discover tools and methodologies for effective orchestration and automation.</p>
+    
+                <h3>Pulumi for Infrastructure as Code (IaC)</h3>
+                <p>Pulumi is the primary tool we use for managing and deploying our infrastructure as code (IaC). By leveraging Pulumi, we ensure a consistent, version-controlled approach to provisioning resources, minimizing manual errors and improving reproducibility across environments.</p>
+    
+                <h3>Automated Pulumi Workflow with Python Script</h3>
+                <p>To streamline our Pulumi operations, we have created a custom Python script named <code>main.py</code>. This script automates Pulumi actions such as refreshing, creating, or deleting infrastructure in our Production or QA environments, based on the specified changes.</p>
+    
+                <h4>How It Works</h4>
+                <ol>
+                    <li>
+                        <strong>Purpose:</strong>
+                        <p>The script acts as a wrapper around Pulumi commands, simplifying infrastructure management. It ensures that actions are executed consistently across environments.</p>
+                    </li>
+                    <li>
+                        <strong>Interactive Workflow:</strong>
+                        <p>When the script is executed, it prompts the user to specify the desired action:</p>
+                        <ul>
+                            <li><strong>Refresh:</strong> Syncs the state of resources with the actual infrastructure.</li>
+                            <li><strong>Create:</strong> Applies changes to provision new resources or update existing ones based on the Pulumi program.</li>
+                            <li><strong>Delete:</strong> Destroys specified resources as per the script's configuration.</li>
+                        </ul>
+                        <p>The user is also prompted to choose the target environment (Production or QA).</p>
+                    </li>
+                    <li>
+                        <strong>Environment Awareness:</strong>
+                        <p>The script dynamically applies changes only to the selected environment, ensuring that Production and QA infrastructure remain independent. It utilizes Pulumi's state files and configurations to maintain accurate records of deployed resources.</p>
+                    </li>
+                    <li>
+                        <strong>Version Control:</strong>
+                        <p>Any modifications to the Pulumi program or script are tracked in version control (e.g., Git), ensuring that changes are auditable and reversible.</p>
+                    </li>
+                </ol>
+    
+                <h4>Key Benefits</h4>
+                <ul>
+                    <li><strong>Consistency:</strong> Ensures all infrastructure deployments follow the same process, reducing errors.</li>
+                    <li><strong>Automation:</strong> Eliminates manual execution of Pulumi commands, saving time and effort.</li>
+                    <li><strong>Environment-Specific Operations:</strong> Isolates changes to the selected environment, ensuring no unintended impacts.</li>
+                    <li><strong>Interactive Interface:</strong> Simplifies the workflow with clear prompts for user input.</li>
+                    <li><strong>Version Control Integration:</strong> Facilitates tracking of infrastructure changes for easy rollback or updates.</li>
+                </ul>
+    
+                <h4>Usage Instructions</h4>
+                <ol>
+                    <li><strong>Run the Script:</strong> Execute the Python script using the following command:
+                        <pre>cd kubernetes</pre>
+                        <pre>python3 __main__.py</pre>
+                    </li>
+                    <li><strong>Follow the Prompts:</strong> Choose the desired action (Refresh, Create, or Delete). Select the environment (Production or QA).</li>
+                    <li><strong>Script Execution:</strong> The script runs the corresponding Pulumi commands based on user input. It interacts with the Pulumi backend to perform actions safely and efficiently.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="scalingModal" class="custom-modal">
+        <div class="custom-modal-content">
+            <div class="custom-modal-header">
+                <h2>Capacity Management and Auto-Scaling</h2>
+                <span class="custom-modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Understand strategies for efficient capacity management and scaling systems dynamically.</p>
+    
+                <h3>Capacity Management and Auto-Scaling</h3>
+                <p>Effective capacity management and auto-scaling are crucial for ensuring that our systems can handle varying loads without over-provisioning resources. Here’s how we implement these strategies:</p>
+    
+                <h4>Zero-Scale Auto-Scaling</h4>
+                <p>Configured in Amazon EKS (Elastic Kubernetes Service), our Zero-Scale Auto-Scaling ensures that resources are scaled down to zero when not in use. This helps to minimize costs by only using resources when necessary, providing a cost-effective solution for handling fluctuating workloads.</p>
+    
+                <h4>Scaling Policies</h4>
+                <p>Scaling policies are defined for all environments to ensure that resources are automatically adjusted based on demand. As traffic or load increases, the system automatically scales up resources to accommodate the demand, and scales down when demand decreases, ensuring optimal resource usage and performance.</p>
+            </div>
+        </div>
+    </div>
+    <div id="versionControlModal" class="custom-modal">
+        <div class="custom-modal-content">
+            <div class="custom-modal-header">
+                <h2>Version Control Management</h2>
+                <span class="custom-modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Learn to efficiently manage versions and collaborate on codebases with tools like Git.</p>
+    
+                <h3>Version Control Tools</h3>
+                <p>Our infrastructure includes **Gitea** as our internal version control system and **Argo CD** for deploying containerized applications from Amazon Elastic Container Registry (ECR) using Helm charts. This setup ensures efficient management of code changes and automated deployment of applications, aligning with best practices for DevOps.</p>
+    
+                <h4>1. Gitea Instance</h4>
+                <p><strong>Gitea</strong> is an open-source, self-hosted version control system providing Git services similar to GitHub, but hosted on our internal infrastructure. Gitea serves as the foundation for managing source code, enabling collaborative development, and preserving historical data.</p>
+    
+                <h5>Purpose:</h5>
+                <p>The Gitea instance is used to manage all codebases and repositories for our projects. It facilitates a controlled environment for versioning, code reviews, and branching strategies.</p>
+    
+                <h5>Key Benefits:</h5>
+                <ul>
+                    <li><strong>Data Integrity:</strong> Maintains a reliable and consistent history of code changes.</li>
+                    <li><strong>Collaboration:</strong> Enables team members to work collaboratively on code, track issues, and manage project progress.</li>
+                    <li><strong>Internal Control:</strong> Ensures that code remains within our secured environment, providing better control over access and permissions.</li>
+                </ul>
+                <p>This setup helps developers maintain version control across projects, track changes, and ensure all code is up-to-date, which is especially critical for deployment processes.</p>
+    
+                <h4>2. Argo CD</h4>
+                <p><strong>Argo CD</strong> is a declarative, GitOps-based continuous delivery tool specifically designed for Kubernetes applications. By linking Argo CD to our Gitea repositories, we can streamline the deployment process directly from our Git-managed infrastructure.</p>
+    
+                <h5>Functionality:</h5>
+                <ul>
+                    <li><strong>Source Connection:</strong> Argo CD connects to Gitea repositories, monitors changes in specified branches, and pulls the latest configurations or code updates.</li>
+                    <li><strong>Automated Deployment:</strong> Once a change is detected in the Git repository, Argo CD automatically updates the Kubernetes cluster with the new configuration or containerized application.</li>
+                    <li><strong>Helm Chart Integration:</strong> Argo CD deploys applications from Amazon ECR using Helm charts, ensuring consistency and repeatability in application deployments.</li>
+                    <li><strong>Continuous Monitoring:</strong> Argo CD continuously monitors the live application state and compares it against the desired state stored in Git, ensuring that any deviations are automatically corrected.</li>
+                </ul>
+                <p>By using Argo CD in conjunction with Gitea, we achieve a fully automated and streamlined CI/CD pipeline that integrates seamlessly with our Kubernetes-based infrastructure.</p>
+    
+                <h4>Application Deployment and GitOps Workflow</h4>
+                <p>The deployment process follows a **GitOps** workflow, where the desired state is defined in Git (our Gitea instance), and the actual deployed state in Kubernetes is automatically synchronized.</p>
+    
+                <h5>Deployment Flow:</h5>
+                <ol>
+                    <li><strong>Code Update:</strong> When a new commit is pushed to the Gitea repository, containing updates or fixes.</li>
+                    <li><strong>Image Update in ECR:</strong> The updated code is built, and the latest image is pushed to the Elastic Container Registry (ECR).</li>
+                    <li><strong>Argo CD Trigger:</strong> Argo CD detects the updated image tag or configuration and initiates a deployment using Helm charts.</li>
+                    <li><strong>Application Rollout:</strong> Argo CD deploys or updates the application on the Kubernetes cluster, making the latest version available.</li>
+                </ol>
+    
+                <h5>Benefits of Argo CD:</h5>
+                <ul>
+                    <li><strong>Automated Deployments:</strong> Reduces manual deployment processes by automating container rollout.</li>
+                    <li><strong>Declarative Configuration:</strong> Uses Kubernetes-native manifest files or Helm charts, making configuration clear and consistent.</li>
+                    <li><strong>Self-Healing:</strong> Automatically reverts applications to their desired state if configurations drift, adding stability and reliability.</li>
+                </ul>
+    
+                <h4>Detailed Workflow and Integration</h4>
+                <h5>Gitea and Argo CD Integration:</h5>
+                <p>The integration between Gitea and Argo CD ensures a seamless CI/CD process, where changes in the repository trigger automated deployments to the Kubernetes clusters.</p>
+    
+                <h5>1. Repository Management in Gitea:</h5>
+                <p>Our Gitea instance holds the Helm chart configurations and application code. Each repository corresponds to a specific project or application, providing version control, access control, and historical tracking.</p>
+    
+                <h5>2. Continuous Delivery with Argo CD:</h5>
+                <p>Argo CD monitors the Gitea repository for any changes to the configurations or application code. When changes are detected, Argo CD automatically pulls the latest ECR image of the application and deploys it onto our Kubernetes cluster using the Helm chart defined in the repository.</p>
+    
+                <h5>3. Helm Charts for Deployment:</h5>
+                <p>Each application is defined by a Helm chart stored within the Gitea repository. Helm charts simplify the deployment by parameterizing configurations (like image tags, resource limits, and service definitions), making deployments consistent and reproducible.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <div id="Communication" class="custom-modal">
+        <div class="custom-modal-content">
+            <div class="custom-modal-header">
+                <h2>Communication and Notifications</h2>
+                <span class="custom-modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Learn to efficiently manage versions and collaborate on codebases with tools like Git.</p>
+    
+                <h3>Monitoring and Downtime Notifications Overview</h3>
+                <p>Our infrastructure incorporates a robust monitoring system using the Loki Stack and an automated Slack notification setup to ensure timely communication and proactive handling of downtime or performance issues.</p>
+    
+                <h4>Loki Stack for Monitoring and Alerting</h4>
+                <p>The Loki Stack (comprising Prometheus, Grafana, Loki, and Promtail) is our primary monitoring and alerting system. It provides comprehensive visibility into the state of our Kubernetes clusters, services, and applications.</p>
+    
+                <h5>Components:</h5>
+                <ol>
+                    <li>
+                        <strong>Prometheus:</strong> Collects metrics from Kubernetes clusters and external services. Configured with alerting rules to detect anomalies or failures. Sends alert triggers to connected notification systems like Slack.
+                    </li>
+                    <li>
+                        <strong>Grafana:</strong> Provides rich visualizations for monitoring data. Displays custom dashboards with detailed metrics and insights. Used for real-time monitoring of Kubernetes resources and application performance.
+                    </li>
+                    <li>
+                        <strong>Loki:</strong> Centralized log aggregation for all Kubernetes services, pods, and system components. Enables log-based alerting and troubleshooting.
+                    </li>
+                    <li>
+                        <strong>Promtail:</strong> Collects logs from Kubernetes pods and forwards them to Loki for processing and storage.
+                    </li>
+                </ol>
+    
+                <h4>Monitoring Features:</h4>
+                <ul>
+                    <li>
+                        <strong>Custom Dashboards:</strong> Track cluster-level and namespace-level metrics. Monitor pods, services, and workloads. Provide visualizations of CPU, memory, disk utilization, and network activity. Display detailed logs, error rates, and system health. Custom dashboards cater to specific needs like application performance and Kubernetes resource utilization.
+                    </li>
+                    <li>
+                        <strong>Log and Metric Correlation:</strong> Logs and metrics are integrated into a single system for easier debugging and root cause analysis.
+                    </li>
+                    <li>
+                        <strong>Alert Rules:</strong> Prometheus alerting rules are configured for critical scenarios such as:
+                        <ul>
+                            <li>High resource usage (CPU, memory, disk).</li>
+                            <li>Pod restarts or crashes.</li>
+                            <li>Service unavailability or performance degradation.</li>
+                        </ul>
+                        <p>Alerts are pushed to Slack for immediate visibility.</p>
+                    </li>
+                </ul>
+    
+                <h4>Workflow for Monitoring and Notifications</h4>
+                <ol>
+                    <li>
+                        <strong>Data Collection:</strong>
+                        <p>Promtail collects logs from Kubernetes nodes and sends them to Loki. Prometheus scrapes metrics from Kubernetes components and applications.</p>
+                    </li>
+                    <li>
+                        <strong>Data Visualization:</strong>
+                        <p>Grafana dashboards provide detailed insights into the health and performance of the infrastructure. Logs and metrics are displayed side-by-side for quick troubleshooting.</p>
+                    </li>
+                    <li>
+                        <strong>Alert Generation:</strong>
+                        <p>Prometheus evaluates configured alerting rules. When a condition is met, Prometheus triggers an alert.</p>
+                    </li>
+                    <li>
+                        <strong>Notification Delivery:</strong>
+                        <p>Alerts are sent to the Slack channel <code>#monitoring-cb-infra</code>. Messages include details about the issue, severity, and recommended next steps.</p>
+                    </li>
+                </ol>
+    
+                <h4>Downtime Notifications</h4>
+                <p>We use Slack as the primary channel for real-time communication with the team regarding downtime and maintenance.</p>
+    
+                <h5>Slack Channel:</h5>
+                <p><strong>#monitoring-cb-infra</strong></p>
+    
+                <h5>Purpose:</h5>
+                <ul>
+                    <li>To notify teams of scheduled maintenance windows or unexpected downtime.</li>
+                    <li>To provide immediate updates during service outages or performance issues.</li>
+                    <li>To enable swift troubleshooting and resolution by notifying relevant personnel.</li>
+                </ul>
+    
+                <h5>Notification Features:</h5>
+                <ul>
+                    <li><strong>Automated Alerts:</strong> Sent directly to the Slack channel using monitoring tools like Prometheus and Grafana.</li>
+                    <li><strong>Transparent Communication:</strong> Ensures that all stakeholders are informed of infrastructure status changes to minimize disruptions.</li>
+                    <li><strong>Customizable Messages:</strong> Alerts include details such as the affected services, estimated resolution times, and recommended actions.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="appendix" class="custom-modal">
+        <div class="custom-modal-content">
+            <div class="custom-modal-header">
+                <h2>Appendix</h2>
+                <span class="custom-modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Learn to efficiently manage versions and collaborate on codebases with tools like Git.</p>
+    
+                <!-- Common Commands and Scripts Section -->
+                <h3>Common Commands and Scripts</h3>
+                <ul>
+                    <li><strong>S3 Backup and Restore:</strong> <code>bucket_backup_restore.py</code></li>
+                    <li><strong>Database Backup and Restore:</strong> <code>database_backup.py</code>, <code>database_restore.py</code></li>
+                    <li><strong>PVC Migration:</strong> <code>migratepvc.sh</code></li>
+                    <li><strong>VM Management:</strong> Pulumi scripts and manual data copy commands.</li>
+                </ul>
+    
+                <!-- Glossary of Terms Section -->
+                <h3>Glossary of Terms</h3>
+                <ul>
+                    <li><strong>IaC (Infrastructure as Code):</strong> Managing and provisioning computing infrastructure through machine-readable configuration files.</li>
+                    <li><strong>EKS:</strong> Managed Kubernetes service provided by AWS.</li>
+                    <li><strong>Pulumi:</strong> Tool for IaC using familiar programming languages.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="chatboat">
+        <section class="">
+            <div>
+                <h5>chatboat</h5>
+                <input type="text" placeholder="type here.."><br>
+                <button class="chatboat_btn">submit</button>
+            </div>
+        </section>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('devopsOption').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('devopsContent').style.display = 'block';
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const modalTriggers = document.querySelectorAll('.modal-trigger');
+            modalTriggers.forEach(trigger => {
+                trigger.addEventListener('click', function() {
+                    const modalId = this.getAttribute('data-modal');
+                    const modal = document.getElementById(modalId);
+                    if (modal) modal.style.display = 'block';
+                });
+            });
+
+            const closeButtons = document.querySelectorAll('.custom-modal-close');
+            closeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const modal = this.closest('.custom-modal');
+                    if (modal) modal.style.display = 'none';
+                });
+            });
+
+            const modals = document.querySelectorAll('.custom-modal');
+            modals.forEach(modal => {
+                modal.addEventListener('click', function(event) {
+                    if (event.target === modal) modal.style.display = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --violet: #5320e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Montserrat", serif;
+}
+
+*::selection {
+  background: var(--violet);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(175, 175, 175);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #ff7300;
+}
+
+section {
+  min-height: 100vh;
+  padding: 0 7%;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #002B67;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.heading span {
+  color: rgb(115, 3, 167);
+}
+
+/* Logo and Navbar Styling */
+header {
+  width: 100%;
+  background: #002B67;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header .navbar {
+  padding: 1rem 0;
+}
+
+header .navbar-brand {
+  font-size: 2.5rem;
+  color: #fff;
+  padding-left: 90px;
+  
+}
+ 
+
+
+header .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+header .navbar-nav .nav-link:hover {
+  color: #f4EED7;
+  border-bottom: 0.1rem solid #f4EED7;
+  padding-bottom: 0.5rem;
+}
+
+header .navbar-nav .btn-outline-light {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+header .navbar-nav .btn-outline-light:hover {
+  background: #f4EED7;
+  color: #002B67;
+}
+
+/* Hero Section */
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100vh;
+  align-items: center;
+  background: url("../site-img/hero-bg.png") no-repeat;
+  background-size: cover;
+  scroll-behavior: smooth;
+  background-position: center;
+  
+}
+
+.home .content {
+  flex: 1 1 40rem;
+}
+/* image styling start */
+/* 
+.home .image {
+  flex: 1 1 40rem;
+}
+
+.home .image img {
+  width: 100%;
+  padding: 1rem;
+  animation: float 4s linear infinite;
+}
+/* image animation */
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(3rem);
+  }
+} */
+ /* image styling complited */
+ .home .image {
+  flex: 1 1 40rem;
+  position: relative; /* Add this to position the text relative to the container */
+  overflow: visible; /* Ensure text is visible outside the container */
+}
+
+.home .image img {
+  width: 50%;
+  padding: 1rem;
+  animation: float 4s linear infinite;
+}
+.home .image  h2{
+  color: #355834;
+  font-weight: bold;
+}
+
+/* image animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(1.4rem);
+  }
+}
+
+
+
+
+.home .content h3 {
+  font-size: 3.3rem;
+  font-weight: 800;
+  color: #012970;
+  font-family: "Nunito", sans-serif;
+}
+
+.home .btn {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 0;
+  font-size: 2rem;
+  padding: 1.7rem 3rem;
+  border-radius: 4em;
+  transition: 0.5s;
+  color: #fff;
+  background: #002B67;
+  box-shadow: 0px 5px 15px #002B67;
+}
+.nav-item{
+  padding-right: 30px;
+}
+
+.home .btn span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 30;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  
+
+}
+
+.home .btn i {
+  margin-left: 0.3rem;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+.home .btn:hover i {
+  transform: translateX(5px);
+}
+.Onboarding{
+  margin-top: 20px;
+}
+
+.animated-text{
+  font-weight: 700;
+  font-size: 2.5rem;
+  color:#355834 ;
+  font: bold;
+  font-family: "Montserrat", serif;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #333;
+  width: 30ch; /* Adjust to the length of the text */
+  animation: typing 4s steps(30) 1s forwards, blink 0.5s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30ch; /* Adjust to match the text length */
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+
+
+
+
